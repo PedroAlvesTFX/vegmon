@@ -13,7 +13,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('register_observations', function (Blueprint $table) {
-            $table->id();
+            $table->uuid();
             
             $table->string('image_path');
 
